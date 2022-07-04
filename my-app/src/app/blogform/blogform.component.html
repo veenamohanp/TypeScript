@@ -1,0 +1,22 @@
+<div>
+    <div class="txt">
+        <h4 class="card-title"> Fill Project Details</h4>
+        <mat-form-field >
+          <div class="form-group">
+            <input class="form-group wid" matInput placeholder='Enter Project Title' type="input" name="title" required> 
+          </div>
+          <div class="form-group">
+            <input class="form-group wid" matInput placeholder='Enter Project Description' type="input" name="description" required> 
+          </div>
+          <div class="form-group">
+            <select name='category' class="dropdown">
+                 <option value='default' >Select a Category</option>
+                 <option *ngFor="let cat of category" value='{{cat}}'>{{cat}}</option>
+             </select>
+          </div>
+
+
+          </mat-form-field>
+    </div>      
+    
+</div>

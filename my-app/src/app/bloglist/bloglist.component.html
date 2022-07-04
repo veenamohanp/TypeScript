@@ -1,6 +1,10 @@
 <div>
    <h4 class="heading"> List of Projects I worked on</h4>
 </div>
+<div *ngIf="blogs.length==0">
+    <div id="list"> My Projects are on the way, Please be Patient :)</div>
+    
+</div>
 <div *ngFor="let blog of blogs" id="list" >
     <div>{{blog.title}}</div>
     <div>{{blog.description}}</div>
